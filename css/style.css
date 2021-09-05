@@ -1,0 +1,369 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500,400&display=swap');
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4 {
+    font-family: 'Montserrat';
+}
+h4{
+    font-size: 16px;
+}
+p{
+    font-size: 14px !important;
+    line-height: 1.6;
+    font-weight: 400;
+    color:#b8b8b8 !important;
+    font-family: 'Montserrat';
+    /* text-align: justify; */
+}
+i{
+    color:#2fccd0;
+}
+.offer-progress{
+    color:#949393;
+    font-size: 16px;
+    text-align: left;
+}
+.header{
+    width:100%;
+    height: 100vh;
+    background-image: url("../images/banner-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%,0% 77%,0 0);
+}
+.navbar-nav .nav-link {
+    color: #fff !important;
+    }
+.toggle-btn{
+    background-color: white;
+}
+.header-section{
+    position: relative;
+    height: inherit;
+    width: 100%;
+    color:white;
+    text-align: center;
+
+}
+.banner-txt{
+    position: absolute;
+    width:100%;
+    height: auto;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right:0;
+    opacity: 0.5;
+    z-index: -5;
+    background:linear-gradient(to right,#fff 0%,#2fccd0 0%,#16c9f6  100%);
+}
+.nav-item a {
+    color:#fff;
+    font-weight: bold;
+}
+
+.heading{
+    font-family: "Montserrat",sans-serif;
+    font-size: 60px;
+}
+/* .banner-p {
+    background-color:ivory;
+    padding:5px;
+    opacity: 0.7; */
+
+.header-btn{
+    margin-top:35px;
+}
+.header-btn button{
+    margin:0 5px;
+    font-family: "Montserrat",sans-serif;
+    padding:6px 12px;
+    border:1px solid #fff;
+    outline: none;
+    color: #fff !important;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+.header-btn button:hover{
+    background-color: #fff;
+    color:#16c9f6 !important;
+
+}
+.middle-section{
+    margin:40px 0px;
+}
+.middle-section-div{
+    display: inline-block;
+    /* width: 30% !important; */
+    padding: 20px 30px;
+    margin: 0px;
+    transition:0.3s
+}
+.middle-section-div:hover{
+    box-shadow: 3px 5px 40px 3px rgb(238 236 236);
+    transform:translateY(-15px);
+}
+.middle-section-div p{
+    color:black;
+    font-size: 12px;
+    text-align: justify !important;
+
+}
+.what-offer{
+    background-color: #f7f7f9;
+    margin:40px 0px;
+    padding: 30px 0px;
+}
+.middle-section-div h3{
+    margin-top: 15px;
+    font-size: 20px !important;
+}
+.for-row{
+    display: inline-block !important;
+}
+.offer-services{
+    display: inline-block;
+    text-align: left;
+    padding:0;
+}
+.offer-services h4{
+    font-size: 20px;
+}
+.offer-services-icon{
+    float:left;
+    padding-top:10px;
+    
+}
+.for-count{
+    padding:10px 0;
+
+}
+.for-count p{
+    font-size: 20px!important;
+}
+.for-count h4{
+    margin-bottom: 40px;
+}
+/* --------------------------Pricing start------------------------------------- */
+.for-pricing{
+    margin:30px 0px 30px 0px;
+    padding:50px;
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+
+.card{
+    transition:0.4s ease;
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);    
+}
+.for-pricing h2{
+    margin-bottom: 20px!important;
+}
+.for-pricing-digit{
+    font-size: 30px;
+}
+.card:hover .card-title, .card:hover .for-pricing-digit{
+    color:#16c9f6;
+}
+.card-link {
+    font-size: 14px !important;
+    padding:6px 12px;
+    font-weight: 600;
+    border: 1px solid #16c9f6;
+    border-radius: 15px;
+    color:#000;
+}
+.card:hover:hover .card-link{
+    background-color: #16c9f6;
+    color:#fff;
+}
+
+.for-pricing::before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right:0;
+    z-index: -1;
+    background:linear-gradient(160deg,#06abd4 55%,#fff 0%);
+}
+.client-says{
+    flex-wrap:nowrap !important;
+}
+.box{
+    display: inline-block;
+        
+}
+.box img{
+    width:120px;
+    margin-top:15px;
+    height:120px;
+    border-radius: 100px;
+    margin-left: 60px; 
+}
+
+.box p {
+    margin-top: 30px;
+    
+}
+.carousel-indicators{
+    position:absolute;
+    right:80px;
+    bottom:-70px !important;
+    z-index: 100 ;
+}
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+}
+/* --------------------------------contact us start-------------------- */
+.contact-us{
+    margin-top: 100px;
+    position: relative;
+    width:100%;
+    height: 60vh;
+    margin-bottom: 20px;
+}
+.contact-us::before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right:0;
+    z-index: -1;
+    background:linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+}
+.form-btn{
+    
+        font-size: 14px !important;
+        padding:6px 18px;
+        font-weight: 600;
+        border: 1px solid #2fccd0;
+        border-radius: 20px;
+        color:#000;
+        background-color: #fff;
+    
+}
+.form-btn:hover{
+        background-color: #16c9f6;
+        color:#fff;
+        border: 1px solid #fff;
+        box-shadow:0 0 20px 0 rgb(0,0,0,0.2);}
+
+/* } ---------------------------------------subscribe---------------------------------------------------- */
+    .subscribe{
+        margin-top:30px;
+    }
+    .subscribe-btn{
+        font-size: 16px !important;
+        padding:6px 22px;
+        font-weight: 600;
+        margin-bottom:20px;
+        background-color: #16c9f6;
+        color:#fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+    .subscribe-btn:hover{
+        border: 1px solid #2fccd0;
+        color:#000;
+        background-color: #fff;
+    }
+    #my-btn{
+        display:none;
+        position: fixed;
+        padding: 8px;
+        bottom:20px;
+        right:40px;
+        border:none;
+        z-index: 99;
+        color:#06abd4;
+        background-color: #fff;
+    }
+/* -----------------------------------------footer start----------------------------------- */
+.footer{
+    margin-top:20px;
+    padding:50px 0px;
+    background-color: #16c9f6;
+    color:#fff;
+}
+.footer p{
+    color:#fff!important;
+}
+.footer:nth-child(2){
+    text-align: center !important;
+}
+
+/* ------------------------------------Media Query----------------------------------------------------- */
+
+@media(max-width:768px){
+    .nav-item{
+        text-align: center;
+    }
+    .banner-txt h1{
+        font-size: 32px;
+    }
+    .nav-link {
+        padding: 0.3rem 1rem;
+        }
+    .banner-txt {
+        top: 25%;
+  }
+  .for-pricing, .contact-us{
+      height: auto;
+      margin-top: 50px;
+  }
+  .box img {
+    margin-left: 20px;
+}
+.box p {
+    min-width: 165px;
+}
+.contact-us h2 {
+    margin-top: 100px !important;
+}
+ 
+    .footer:nth-child(2){
+        text-align: left !important;
+    }
+}
